@@ -4,7 +4,15 @@ import rainier from '../assets/images/rainier.jpg'
 function Main(){
   return(
     <div>
-      <img src={rainier}></img>
+      <style jsx>{`
+        .image{
+          text-align: center;
+        }
+      `}</style>
+    <div className="image">
+        <img src={rainier}></img>
+    </div>
+
     </div>
   );
 }

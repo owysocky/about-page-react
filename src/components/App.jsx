@@ -7,25 +7,24 @@ import Main from './Main';
 import Team from './Team';
 
 function App(){
-  var footerStyle={
-    position: 'fixed',
-    left: '0',
-    bottom: '0',
-    width: '100%'
-  }
   return (
     <div>
       <style jsx global>{`
         div{
           font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
         }
+        .footerMargin{
+          margin-bottom: 160px;
+        }
       `}</style>
+    <div className="footerMargin">
       <Header/>
       <Switch>
         <Route exact path='/' component={Main}/>
         <Route path='/team' component={Team}/>
       </Switch>
-      <Footer style={footerStyle}/>
+    </div>
+      <Footer/>
     </div>
   );
 }
