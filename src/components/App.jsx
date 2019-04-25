@@ -14,7 +14,7 @@ function App(){
           font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
         }
         .footerMargin{
-          margin-bottom: 160px;
+          margin-bottom: 170px;
         }
       `}</style>
     <div className="footerMargin">
