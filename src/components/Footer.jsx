@@ -18,12 +18,20 @@ function Footer(){
           position: fixed;
           bottom: 0pt;
           left: 0pt;
+          border-top: 4px solid white;
         }
         img{
           width: 150px;
         }
+        .border-line{
+          margin-top: 2px;
+          border-top: 2px solid #75c603;
+        }
         `}</style>
-      <img src={logo}></img>
+      <div className="border-line">
+        <img src={logo}></img>
+      </div>
+
     </div>
   );
 }

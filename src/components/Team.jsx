@@ -11,11 +11,18 @@ function Team(){
         img{
           height: 400px;
         }
+        h3{
+          margin-left: 100px;
+          color: #75c603;
+        }
       `}</style>
-      <p>That's our team!</p>
+    <h3>That's our team!</h3>
       <img src={julia}></img>
+      <br/>
       <img src={olha}></img>
+      <br/>
       <img src={biker}></img>
+      <br/>
       <img src={biker1}></img>
     </div>
   );
