@@ -1,10 +1,11 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import logo from '../assets/images/logo.png';
 
 function Header(){
   let linkDecoration = {
     textDecoration: 'none',
-    color: '#0090f7'
+    color: '#75c603'
   }
   return(
     <div>
@@ -12,14 +13,19 @@ function Header(){
         p{
           display: inline-block;
           padding: 20px;
+          padding-top: 30px;
         }
         div{
           text-align: center;
-          font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+        }
+        img{
+          width: 100px;
+          float: left;
         }
       `}</style>
-      <p><Link style={linkDecoration} to="">About us</Link></p>
-      <p><Link style={linkDecoration} to="">Our Team</Link></p>
+      <img src={logo}></img>
+      <p><Link to="/" style={linkDecoration}>Home</Link></p>
+      <p><Link to="/team" style={linkDecoration}>Our Team</Link></p>
       <p><Link style={linkDecoration} to="">Locations</Link></p>
     </div>
   );
