@@ -14,6 +14,7 @@ function App(){
           font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
         }
         .footerMargin{
+          margin-top: 110px;
           margin-bottom: 170px;
         }
       `}</style>
